@@ -4,6 +4,7 @@ There are two plugins that ship with this vim plugin.
 
  - markdown.vim
  - reddit.vim
+ - cassandra.vim
 
 
 ## markdown.vim
@@ -22,3 +23,9 @@ There are two plugins that ship with this vim plugin.
 ### Reddit
 
  This method will simply get the generic headlines for today's news stories.  
+
+## cassandra.vim
+
+### CassToCLI
+
+  This method will convert the output of cassandra CLI to the equivalent of insert statements.
