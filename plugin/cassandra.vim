@@ -28,7 +28,6 @@ def get_row_key(key):
 
 def fix_insert(line, rowkey, cf):
     import re
-    print line
     # Exmaple:  => (column=1357718400000, value=ThisIsATest, timestamp=1372359948489000)
     column = value = None
     m = re.search("\(column=(.+),.*value=", line)
@@ -38,7 +37,6 @@ def fix_insert(line, rowkey, cf):
     if m is not None:
         value = m.group(1)
 
-    print "{cf} :: {value} ".format(cf=column, value=value)
     if column is not None and value is not None:
         return "set {CF}['{row}']['{column}'] = '{value}';".format(CF=cf,
         row=rowkey, column=column, value=value)

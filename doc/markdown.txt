@@ -1,0 +1,17 @@
+*markdown.txt*	For Vim version 7.4.  Last change: Thu Oct 31 2013
+
+*markdown*
+*Markdown2HTML*
+
+
+ This method will generate an html version of your .md (Markdown) file.  
+ 
+ default keybinding:  <Leader>md 
+
+
+*MarkdownPreview*
+  This will launch the generated html file into your default web browser.
+
+ default keybinding:  <Leader>mdv
+
+ vim:tw=78:ts=8:ft=help:norl:
