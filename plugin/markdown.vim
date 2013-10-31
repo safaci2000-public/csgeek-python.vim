@@ -25,6 +25,7 @@ endfunction
 function! GetHTMLFileName()
 python << EOF
 import os
+import vim
 vim.command("let g:htmlFile=\"\"")
 dirname = os.path.dirname(vim.current.buffer.name)
 filename = os.path.basename(vim.current.buffer.name)
